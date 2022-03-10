@@ -8,7 +8,7 @@
   /* height */
   --player-height: 90px;
   --comment-form-height: 40px;
-  --nav-height: 36px;
+  --nav-height: 60px;
 
   /* color */
   --black: #000;
@@ -56,7 +56,7 @@
 
 .c-nav {
   height: var(--nav-height);
-  background-color: rgba(0, 0, 0, .4);
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -172,7 +172,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  ;
+  border-radius: 10px;
 }
 
 .card-text {
@@ -184,6 +184,7 @@
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 
 .card-desc {
@@ -193,4 +194,11 @@
   line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  color: var(--gray);
+}
+.slick-prev{
+  left: 10px;
+}
+.slick-next{
+  right: 20px;
 }

@@ -8,6 +8,20 @@
   padding-bottom: 24px;
 }
 
+.horizontal-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.horizontal-list-header a{
+  color: var(--gray);
+  text-decoration: none;
+}
+.horizontal-list-header a:hover{
+  color: #fff;
+}
+
 .horizontal-list-slick {
   display: flex;
   justify-content: space-between;
