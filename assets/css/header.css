@@ -101,3 +101,24 @@
   color: var(--light) !important;
   background-color: var(--danger) !important;
 }
+.nav-item{
+  list-style: none;
+}
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: #fff;  
+}
+.user-dropdown-list button{
+  background-color: #cc0000;
+  text-align: center;
+}
+.user-dropdown-list button span{
+  display: block;
+  margin: 0 auto;
+}
+.user-dropdown-list button:hover{
+  background-color: #b30000;
+}
