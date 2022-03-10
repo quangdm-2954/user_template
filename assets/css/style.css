@@ -1,0 +1,196 @@
+@import url('./music-player.css');
+@import url('./right-sidebar.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./auth.css');
+
+:root {
+  /* height */
+  --player-height: 90px;
+  --comment-form-height: 40px;
+  --nav-height: 36px;
+
+  /* color */
+  --black: #000;
+  --light-black: #070707;
+  --darker: #161616;
+  --fav: #1ed760;
+  --main: #4c7059;
+  --dark-light: #b6b6b6;
+
+  /* z-index */
+  --modal-z-index: 999;
+  --header-z-index: 10;
+}
+
+
+* {
+  user-select: none;
+  color: var(--light);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light);
+}
+
+.right-sidebar {
+  height: calc(100vh - var(--player-height));
+  background-color: var(--black);
+}
+
+.c-nav {
+  height: var(--nav-height);
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 83.333333vw;
+  max-width: 83.333333vw;
+  z-index: var(--header-z-index);
+}
+
+.main {
+  height: calc(100vh - var(--player-height));
+  background-image: linear-gradient(to top, var(--light-black), var(--darker));
+  overflow-y: scroll;
+}
+
+.music-player {
+  height: var(--player-height);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--darker);
+  border-top: 1px solid var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--modal-z-index);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .4);
+  transition: all linear .2s;
+}
+
+.c-modal .comment-box {
+  max-width: 375px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--black);
+  transform: translateX(0);
+  transition: all linear .2s;
+}
+
+.c-modal .comment-box .comment-content {
+  width: 100%;
+  height: calc(100vh - var(--comment-form-height));
+  overflow-y: scroll;
+  background-color: transparent;
+}
+
+.c-modal .comment-box .comment-form {
+  height: var(--comment-form-height);
+  background-color: transparent;
+}
+
+.c-hide.c-modal {
+  z-index: -1;
+  opacity: 0;
+}
+
+.c-hide.c-modal .comment-box {
+  transform: translateX(100vw);
+}
+
+.card-box {
+  margin-right: 16px;
+  background-color: var(--light-black);
+  border-radius: 8px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+}
+
+.card-box:hover {
+  background-color: var(--darker);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+}
+
+.card-box:hover .card-img {
+  padding: 12px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  ;
+}
+
+.card-text {
+  padding: 0 16px;
+}
+
+.card-name {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
