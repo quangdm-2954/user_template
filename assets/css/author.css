@@ -431,6 +431,7 @@
     border-radius: 20px;
     margin-right: 30px;
     margin-left: 15px;
+    object-fit: cover;
 }
 .album__info__meta {
     margin-left: 15px;

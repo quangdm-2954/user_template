@@ -407,6 +407,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .info__type {
     color: #aaa;
@@ -467,6 +468,7 @@
 .content .overview_item .latest-release__art img {
     width: 75px;
     height: 75px;
+    object-fit: cover;
 }
 .content .overview_item .latest-release__song {
     width: calc(100% - 75px);
@@ -587,6 +589,7 @@
     height: 45px;
     margin-right: 20px;
     border-radius: 10px;
+    object-fit: cover;
 }
 .tracks .track__number {
     margin-right: 20px;
@@ -677,6 +680,7 @@
 .related-categrorys .related-categrory__img img {
     width: 42px;
     height: 42px;
+    object-fit: cover;
     border-radius: 50%;
 }
 .related-categrorys .related-categrory__name {
