@@ -2,8 +2,10 @@
 @import url('./right-sidebar.css');
 @import url('./header.css');
 @import url('./main.css');
-@import url('./auth.css');
-
+@import url('./author.css');
+* {
+    font-family: 'League Spartan', sans-serif;
+}
 :root {
   /* height */
   --player-height: 90px;
@@ -52,20 +54,6 @@
 .right-sidebar {
   height: calc(100vh - var(--player-height));
   background-color: var(--black);
-}
-
-.c-nav {
-  height: var(--nav-height);
-  background-color: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 83.333333vw;
-  max-width: 83.333333vw;
-  z-index: var(--header-z-index);
 }
 
 .main {
@@ -201,4 +189,7 @@
 }
 .slick-next{
   right: 20px;
+}
+.related .row .horizontal-list-header{
+    display: none !important ;
 }
