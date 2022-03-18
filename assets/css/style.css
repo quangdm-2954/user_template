@@ -143,7 +143,7 @@
 
 .card-img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   padding: 16px;
   transition: all ease-in-out .2s;
   -webkit-transition: all ease-in-out .2s;
@@ -179,8 +179,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   color: var(--gray);
 }
@@ -192,4 +192,15 @@
 }
 .related .row .horizontal-list-header{
     display: none !important ;
+}
+/* Modal */
+.modal-custom .modal-content{
+    background-color: #282828;
+    border-radius: 20px;
+}
+.btn-custom{
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+    background: white;
 }
