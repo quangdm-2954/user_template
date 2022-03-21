@@ -198,9 +198,44 @@
     background-color: #282828;
     border-radius: 20px;
 }
-.btn-custom{
+#create-playlist .btn-custom{
     padding: 10px 15px;
     color: black;
     font-weight: bold;
     background: white;
+}
+.track-active{
+    background: #282828;
+    border-radius: 10px;
+}
+.track-active .track__art .track__info .track__title{
+    color: var(--fav);
+}
+#name{
+    background-color: #3e3e3e;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0 20px;
+    margin: 15px 0;
+}
+#add-playlist{
+    text-align: center;
+}
+#add-playlist select{
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #181818;
+}
+#add-playlist .btn-add{
+    border: none;
+    color: #181818;
+    background-color: #fff;
+}
+#add-playlist .btn-add:hover{
+    border: none;
+}
+.form-select{
+    margin-left: 10px;
 }

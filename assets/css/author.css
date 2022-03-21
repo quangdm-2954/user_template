@@ -451,6 +451,7 @@
     margin-top: auto;
 }
 .album__info__meta .album__actions .save {
+    border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: 10px;
