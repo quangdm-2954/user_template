@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-span.fav path {
+span.active-favorite path {
   fill: var(--fav) !important;
 }
 
@@ -131,6 +131,9 @@ span.fav path {
 .range-time-control::-moz-range-progress {
   background: var(--fav);
 }
+.range-volume-control::-moz-range-progress {
+    background: var(--fav);
+  }
 .range-time-control::-moz-range-thumb {
   width: 8px;
   height: 8px;
