@@ -51,13 +51,13 @@
 
 }
 
-.add-to-favorite {
+.fav-btn {
   margin-right: 16px;
   margin-left: 16px;
   cursor: pointer;
 }
 
-span.active-favorite path {
+.liked span path {
   fill: var(--fav) !important;
 }
 
