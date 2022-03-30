@@ -65,7 +65,7 @@
 }
 .interact-comment-form .comment-form-body .comment-body-items {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 .interact-comment-form .comment-form-body .comment-body-items .avatar-account {
     margin-right: 30px;
@@ -83,12 +83,12 @@
 .interact-comment-form .comment-form-body .comment-body-items .comment-content .name-account {
     font-size: 15px;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .interact-comment-form .comment-form-body .comment-body-items .comment-content .comment {
     font-size: 15px;
     font-weight: normal;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     width: 100%;
 }
 @media (max-width: 768px) {
@@ -152,11 +152,7 @@
     font-size: 13px;
     font-weight: bold;
 }
-.interact-comment-form .comment-form-body .comment-body-items .reply-list {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
+
 .interact-comment-form .comment-form-body .comment-body-items .reply-list .reply-item {
     display: flex;
     margin-bottom: 30px;
@@ -217,4 +213,7 @@
 .related-song-item:hover{
     background: #282828;
     border-radius: 10px;
+}
+form{
+    position: relative;
 }
