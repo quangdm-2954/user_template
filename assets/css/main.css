@@ -864,6 +864,9 @@ button:hover {
 .remove-song {
     cursor: pointer;
 }
+.song-detail {
+    cursor: pointer;
+}
 .remove-song svg {
     font-size: 25px;
     visibility: hidden;

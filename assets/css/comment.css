@@ -1,0 +1,220 @@
+.interact-comment-form {
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .interact-comment-form {
+        margin: 0 5px;
+   }
+    .interact-comment-form .message {
+        width: 100%;
+   }
+}
+.comment-form{
+    margin-left: 15px;
+}
+.reply-input.active{
+    display: block !important;
+    opacity: 1 !important;
+}
+.reply-list.active{
+    display: block !important;
+    opacity: 1 !important;
+}
+.interact-comment-form .comment-form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.interact-comment-form .comment-form-header .login-text {
+    margin-right: 30px;
+}
+.interact-comment-form .comment-form-mess {
+    margin-bottom: 20px;
+    position: relative;
+}
+.interact-comment-form .comment-form-mess .message {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border: solid 1px var(--fav);
+    background-color: #fff;
+    color: var(--black);
+    margin-bottom: 10px;
+    margin-top: 14px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-inline-start: 15px;
+}
+.interact-comment-form .comment-form-mess .send-mess-btn {
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    font-size: 20px;
+    height: 22px;
+    background: #fff;
+    border: none;
+    color: var(--fav);
+}
+.interact-comment-form .comment-form-mess .send-mess-btn path {
+    fill: var(--fav);
+}
+.interact-comment-form .comment-form-body .comment-body-items {
+    display: flex;
+    margin-bottom: 32px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .avatar-account {
+    margin-right: 30px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .avatar-account img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content {
+    margin-top: 10px;
+    width: 93%;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .name-account {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .comment {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 18px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .interact-comment-form .comment-form-body .comment-body-items .comment-content .comment {
+        width: 100%;
+   }
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option {
+    display: flex;
+    font-size: 13px;
+    max-height: 16px;
+    margin-bottom: 17px;
+    justify-content: space-between;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left {
+    display: flex;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-at {
+    color: #838383;
+    margin-right: 25px;
+    font-size: 13px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-like {
+    font-size: 13px;
+    margin-right: 25px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-like img {
+    height: 16px;
+    margin-right: 5px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-like span {
+    height: 16px;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-reply span {
+    font-weight: 600;
+}
+.comment-reply:hover .reply-show{
+    color: var(--fav);
+}
+.comment-reply:hover{
+    text-decoration: none !important;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-right a {
+    color: var(--fav);
+}
+@media (max-width: 430px) {
+    .interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-right a .hide-report {
+        display: none;
+   }
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-right a:hover {
+    color: #000;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .comment-form-mess {
+    display: none;
+}
+.interact-comment-form .comment-form-body .comment-body-items .comment-content .comment-form-mess textarea {
+    border: solid 0.5px var(--fav);
+}
+.interact-comment-form .comment-form-body .comment-body-items .reply {
+    font-size: 13px;
+    font-weight: bold;
+}
+.interact-comment-form .comment-form-body .comment-body-items .reply-list {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.interact-comment-form .comment-form-body .comment-body-items .reply-list .reply-item {
+    display: flex;
+    margin-bottom: 30px;
+    margin-bottom: 13px !important;
+}
+.interact-comment-form .comment-form-body .comment-body-items .reply-list .reply-item .reply-items-content {
+    margin-top: 15px;
+    width: 100%;
+}
+.interact-comment-form .comment-form-body .comment-body-items .reply-list .reply-item:last-child {
+    margin-bottom: 0 !important;
+}
+.interact-comment-form .comment-form .comment-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.interact-comment-form .comment-form .comment-form-btn a {
+    color: var(--fav) !important;
+}
+.interact-comment-form .comment-form .comment-form-btn:hover {
+    border: 1px solid var(--fav);
+}
+.related-song-name{
+    font-weight: 600;
+}
+.related-song-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.related-song-author{
+    font-weight: 400;
+    font-size: 13px;
+    color: #adad85;
+}
+.related-song img{
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.related-song-info{
+    display: flex;
+    align-items: center;
+}
+.related-time-song{
+    margin-left: auto;
+    margin-right: 5px;
+}
+.comment-section{
+    margin-top: 20px;
+}
+.related-song-item:hover{
+    background: #282828;
+    border-radius: 10px;
+}
