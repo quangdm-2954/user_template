@@ -106,7 +106,7 @@
 .interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left {
     display: flex;
 }
-.interact-comment-form .comment-form-body .comment-body-items .comment-content .option .option-left .comment-at {
+.comment-at {
     color: #838383;
     margin-right: 25px;
     font-size: 13px;
