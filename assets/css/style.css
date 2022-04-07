@@ -273,9 +273,10 @@
 .song-detail path{
     fill: #fff !important;
 }
-.song-detai:hover .song-detai path{
-    fill: var(--fav);
+.song-detai:hover{
+    color: #1ed760;
 }
 .song-detai{
     cursor: pointer;
 }
+
